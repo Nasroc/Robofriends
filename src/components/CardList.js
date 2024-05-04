@@ -2,6 +2,10 @@ import React from 'react';
 import Card from './Card';
 
 const CardList = ({robots}) => {
+    
+    if(true){
+        throw new Error('Noooo!');
+    }
     return (
         <div>
             {robots.map((user, i) => {
@@ -13,7 +17,6 @@ const CardList = ({robots}) => {
                         email={robots[i].email}/>
                 );}
             )}
-
         </div>
     );
 }
